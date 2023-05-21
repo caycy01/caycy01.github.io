@@ -1,0 +1,124 @@
+html {
+    color-scheme: light;
+}
+body{
+    margin: 0px;
+    font-family: system-ui;
+}
+.top {
+    display: flex;
+    height: 20em;
+    padding: 20px;
+    text-align: center;
+    background:rgb(84, 153, 218);
+}
+.top p{
+    margin:auto;
+    font-size: 3em;
+    color: #ffffff;
+    
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+main .left {
+    text-align: center;
+    height: auto;
+    margin: 30px 20px 10px 100px;
+    width: 10em;
+}
+main .left .assemble{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+main .left img{
+    border-radius: 35px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    object-fit: cover;
+    height: 10em;
+    width: 10em;
+}
+main .left h5{
+    margin:auto;
+    font-size: 1.5em;
+}
+main .left p{
+    margin: 5px;
+    display: inline-block;
+}
+main .content {
+    margin: 20px 5% 10% 5%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+main .content .button{
+    max-width: 25em;
+    border-radius: 35px;
+    max-height: 10em;
+    margin: 10px;
+    background: rgb(255, 246, 246);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    display: flex;
+}
+main .content .button h3{
+    color: #000;
+    height: 2em;
+    width: 15em;
+    margin: 5px 5px 0 20px;
+}
+main .content .button p{
+    color: rgb(0, 0, 0);
+    height: 10em;
+    width: 8em;
+}
+main .content .button img{
+    border-radius: 35px 0 0 35px;
+    object-fit: cover;
+    height: 10em;
+    width: 10em;
+}
+footer{
+    height: 50px;
+    display: flex;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    justify-content: center;
+    text-align: center;
+}
+footer p{
+    color: #000;
+    margin:auto;
+}
+@media only screen and (max-width: 768px) {
+    .top{
+        display: none;
+    }
+    main {
+        display:block;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main .left {
+        display: flex;
+        height: 10em;
+        margin: 10px;
+        width: 25em;
+    }
+    main .left img{
+        border-radius: 35px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+        object-fit: cover;
+        height: 10em;
+        width: 10em;
+    }
+    main .left .assemble{   
+        margin:auto;
+        font-size: 1.5em;
+    }
+    main .left #hitokoto{
+        display:none;
+    }
+}
