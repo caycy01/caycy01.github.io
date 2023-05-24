@@ -54,34 +54,47 @@ main .content {
     display: flex;
     flex-wrap: wrap;
 }
-main .content .button{
-    max-width: 25em;
-    border-radius: 35px;
-    max-height: 10em;
-    margin: 10px;
+main .content .card{
+    width: 23em;
+    border-radius: 20px;
+    height: 10em;
+    margin: 20px;
     background: rgb(255, 246, 246);
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
     display: flex;
+    text-decoration:none;
 }
-main .content .button h3{
+main .content .card h3{
     color: #000;
     height: 2em;
     width: 15em;
-    margin: 5px 5px 0 20px;
+    margin: 10px 5px 0 20px;
 }
-main .content .button p{
+main .content .card p{
     color: rgb(0, 0, 0);
     height: 10em;
     width: 8em;
 }
-main .content .button img{
-    border-radius: 35px 0 0 35px;
+main .content .card img{
+    border-radius: 20px 0 0 20px;
     object-fit: cover;
     height: 10em;
     width: 10em;
 }
+main .content .button{
+    display: flex;
+    height: 10em;
+    width: 10em;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration:none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+}
 footer{
     height: 50px;
+    background-color: #ffffff;
     display: flex;
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
     justify-content: center;
@@ -92,6 +105,9 @@ footer p{
     margin:auto;
 }
 @media only screen and (max-width: 768px) {
+    html{
+        background-color: rgb(84, 153, 218);
+    }
     .top{
         display: none;
     }
@@ -103,12 +119,16 @@ footer p{
     }
     main .left {
         display: flex;
+        border-radius: 20px;
+        background-color:#ffffff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .2);
         height: 10em;
         margin: 10px;
-        width: 25em;
+        width: 23em;
+
     }
     main .left img{
-        border-radius: 35px;
+        border-radius: 20px;
         box-shadow: 0 0 20px rgba(0, 0, 0, .2);
         object-fit: cover;
         height: 10em;
